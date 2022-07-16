@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1{
+    font-size: 3rem;
+    text-align: center;
+    margin-block: 50px;
+    font-family:'Segoe UI', Tahoma;
+}
+.container {
+  width: 500px;
+  height: 300px;
+  background-color: bisque;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin: 100px auto;
+}
+.emojis_box {
+  height: 50px;
+  position: relative;
+}
+.far {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  visibility: hidden;
+}
+.active_emojis {
+  color: red;
+}
+.shaw_emojis {
+  visibility: visible;
+  animation: emojis 0.2s forwards;
+}
+@keyframes emojis {
+  from {
+    transform: translateX(-55%);
+  }
+  to {
+    transform: translateX(-45%);
+  }
+}
+.fa-star {
+  cursor: pointer;
+}
+.active {
+  color: gold;
+}
